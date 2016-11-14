@@ -8,7 +8,7 @@ public class PS_Winfo_WS1617 {
 
 	private JFrame frame;
 
-	/**hello world
+	/**hello world ist scheiﬂ3
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
