@@ -9,6 +9,7 @@ public class PS_Winfo_WS1617 {
 	private JFrame frame;
 
 	/**hello world push push 
+	 * ICh ficke dich amina koym
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
