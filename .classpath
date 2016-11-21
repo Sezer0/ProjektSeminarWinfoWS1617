@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/Users/Daniel_Hanke/Desktop/Universität/Wirtschaftsinformatik/Semester3/Projektseminar/simmetrics_jar_v1_6_2_d07_02_07.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
