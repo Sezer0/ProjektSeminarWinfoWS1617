@@ -19,6 +19,7 @@ public class PS_Winfo_WS1617 {
  private static ArrayList<csvItem> userList = csvReader.userListReader();
  private static ArrayList <String> staedteList = csvReader.staedteReader();
 
+
  
  public static void main(String[] args) throws IOException {
 	 csvReader  = new CSVReader();
@@ -35,9 +36,21 @@ public class PS_Winfo_WS1617 {
 		
 		
 		break;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					PS_Winfo_WS1617 window = new PS_Winfo_WS1617();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+
 	}
 		
-	 
  }
  
  
