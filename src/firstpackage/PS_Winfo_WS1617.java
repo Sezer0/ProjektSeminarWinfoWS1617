@@ -32,11 +32,13 @@ public class PS_Winfo_WS1617 {
 	
 	case "Soundex":
 		
-		float percent = algorithm.getAccuray(name, userList, staedteList );
-		
+		ArrayList<Float> soundexpercent = algorithm.getAccuray(name, userList, staedteList ).get(0);
 		
 		break;
-
+	case "Levenshtein":
+		ArrayList<Float> levenshteinpercen = algorithm.getAccuray(name, userList, staedteList).get(1);
+		System.out.println(levenshteinpercen);
+		
 	}
  }
  

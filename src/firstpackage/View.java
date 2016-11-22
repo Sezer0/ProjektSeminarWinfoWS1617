@@ -10,9 +10,10 @@ class View extends JFrame
 {
 
 	JPopupMenu menu;
-	JButton jb,jb1;
+	JButton jb;
 	JMenuItem m1,m2,m3,m4;
 	PS_Winfo_WS1617 ps_Winfo_WS1617 = new PS_Winfo_WS1617();
+	private JTextField textField;
 	/**
 	 * @wbp.nonvisual location=380,171
 	 */
@@ -29,11 +30,7 @@ class View extends JFrame
     	
     	
         setTitle("Menu Button");
-        getContentPane().setLayout(new GridBagLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        
-        // Create JButtons
-        jb=new JButton("Algorithms");
         
         
         
@@ -42,8 +39,8 @@ class View extends JFrame
         
         // Create JMenuItems
         m1=new JMenuItem("Soundex");
-        m2=new JMenuItem("Item 2");
-        m3=new JMenuItem("Item 3");
+        m2=new JMenuItem("Levenshtein");
+        m3=new JMenuItem("Chapman");
         m4=new JMenuItem("Item 4");
         
         // Add JMenuItems to JPopupMenu
@@ -72,13 +69,26 @@ class View extends JFrame
             
             }
         };
+        
+        m1.addActionListener(menuListener);
+        m2.addActionListener(menuListener);
+        // Create JButtons
+        jb=new JButton("Algorithms");
+        jb.setBounds(10, 34, 83, 23);
         // Add ActionListener to JButtons
         jb.addActionListener(a1);
         
-        m1.addActionListener(menuListener);
-        
-        // Add the JButtons
+        getContentPane().setLayout(null);
         getContentPane().add(jb);
+        
+        textField = new JTextField();
+        textField.setBounds(129, 35, 123, 20);
+        getContentPane().add(textField);
+        textField.setColumns(10);
+        
+        JButton btnNewButton = new JButton("Füge Stadt hinzu");
+        btnNewButton.setBounds(259, 34, 115, 23);
+        getContentPane().add(btnNewButton);
         
         // Set some size and show
         setSize(400,400);
@@ -122,11 +132,4 @@ class View extends JFrame
         // This location is relative to the screen
         menu.setLocation(p.x,p.y+b.getHeight());
     }
-    
-   /* public static void main(String args[])
-    {
-        new View();
-    }*/
-    
-    
 }
